@@ -859,13 +859,14 @@ body{
 	text-transform: uppercase;
 	color: #2d3033;
 	margin-top: 28px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .feature-item__text{
 	font-size: 14px;
 	line-height: 21px;
 	color: #767b82;
 	padding: 0 15px;
+	margin-top: 0;
 }
 .feature-item{
 	padding-bottom: 50px;
@@ -873,6 +874,91 @@ body{
 .gallery{
 	padding-top: 90px;
 }
-.gallery img{
-	width: 100%;
+.gallery__item{
+	overflow: hidden;
+	position: relative;
+	height: 340px;
+	box-shadow: 0 0 0 1px #ffffff;
 }
+.hover-block{
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	background: rgba(232, 69, 69, 0.9);
+ 	width: 100%;
+ 	height: 100%;
+ 	opacity: 0;
+  transition: opacity .3s ease-in;
+}
+.gallery__item img{
+	height: 350px;
+	width: 580px;
+  transition: transform .3s linear;
+}
+.hover-block-description{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+.hover-block-description__title{
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+  transform: translateY(-40px);
+  transition: transform .4s ease-out;
+}
+.hover-block-description__text{
+  margin: 0;
+  transform: translateY(40px);
+  transition: transform .4s ease-out;
+}
+.gallery__item:hover .hover-block{
+  opacity: 1;
+}
+.gallery__item:hover img{
+  transform: scale(1.2);
+}
+.gallery__item:hover .hover-block-description__title,
+.gallery__item:hover .hover-block-description__text{
+  transform: translateY(0px);
+}
+.team{
+  padding-top: 100px;
+}
+.team__person > img{
+  width: 100%;
+}
+.team__person-name{
+  font-size: 22px;
+  font-weight: normal;
+  color: #2d3033;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+.team__person-role{
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #e84545;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.team__person-info{
+  font-size: 14px;
+  line-height: 23px;
+  color: #6c7279;
+  margin-top: 0;
+}
+
+
+
+/*Responsive*/
+
+@media(max-width: 767px){
+  .gallery img{
+    width: 100%;
+  }
+}
+
