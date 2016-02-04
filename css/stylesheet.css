@@ -927,6 +927,7 @@ body{
 }
 .team{
   padding-top: 100px;
+  padding-bottom: 60px;
 }
 .team__person{
   margin-bottom: 30px;
@@ -1010,9 +1011,98 @@ body{
   background-color: #e84545;
   color: #fff;
 }
-.icon-facebook{
-  
+.slider{
+  background-color: #53354a;
 }
+.slick-active,
+.slick-slide{outline: 0;}
+.slider img{
+  width: 50%;
+  display: inline-block;
+}
+.slider__item-text{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 60px;
+  margin-left: 50px;
+  color: #fff;
+}
+.slider__item-text blockquote{
+  margin: 0;
+  font-size: 36px;
+  font-family: 'Cardo', serif;
+  line-height: 42px;
+}
+.slider__item-text p{
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+
+/* Dots */
+
+.slick-slider
+{
+    margin-bottom: 0px;
+}
+.slick-dots
+{
+    position: absolute;
+    bottom: 0px;
+    left: 75%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0px;
+    line-height: 0;
+    display: block;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before{
+    opacity: .8;
+}
+.slick-dots li button:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    content: "";
+}
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+
 
 
 
