@@ -988,10 +988,12 @@ body{
   margin: 0;
   padding: 0;
 }
-.team__person-social-icons li{
+.team__person-social-icons li,
+.contacts__item-social-icons li{
   display: inline-block;
 }
-.team__person-social-icons a{
+.team__person-social-icons a,
+.contacts__item-social-icons a{
   font-size: 18px;
   text-decoration: none;
   color: #c6cacc;
@@ -1006,7 +1008,8 @@ body{
   text-align: center;
   transition: all 0.2s ease-in;
 }
-.team__person-social-icons a:hover{
+.team__person-social-icons a:hover,
+.contacts__item-social-icons a:hover{
   border: 1px solid #e84545;
   background-color: #e84545;
   color: #fff;
@@ -1101,9 +1104,64 @@ body{
     opacity: 1;
     background-color: rgba(255, 255, 255, .8);
 }
-
-
-
+.call-to-action{
+    padding: 100px 0;
+}
+.call-to-action__title{
+    font-size: 28px;
+    font-weight: 300;
+    color: #2d3033;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.call-to-action__text{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #2d3033;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.contacts{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-color: #3a3e64;
+    color: #fff;
+}
+.contact__item{
+    margin-bottom: 70px;
+}
+.contacts__item-title{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.contacts__item-text{
+    font-size: 14px;
+    line-height: 23px;
+    color: #afb0bc;
+    margin: 0;
+}
+.contacts__item-social-icons{
+    padding: 0;
+}
+.contacts__item-social-icons a{
+    color: #fff;
+    border: 1px solod #fff;
+}
+.copyrights{
+  padding: 25px 0;
+  background-color: #313454;
+}
+.copyright__text{
+  font-size: 14px;
+  line-height: 23px;
+  color: #808080;
+  margin: 0;
+}
 
 
 
