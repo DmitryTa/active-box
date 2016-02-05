@@ -36,9 +36,6 @@ $(document).ready(function(){
     });
 });
    
-   $('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
 
    var sections = $('section')
         nav = $('nav[class="main-nav"]');
