@@ -1020,6 +1020,7 @@ body{
 .slick-active,
 .slick-slide{outline: 0;}
 .slider img{
+  height: 325px;
   width: 50%;
   display: inline-block;
 }
@@ -1027,7 +1028,7 @@ body{
   display: inline-block;
   width: 40%;
   vertical-align: top;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-left: 50px;
   color: #fff;
 }
@@ -1047,12 +1048,10 @@ body{
 
 /* Dots */
 
-.slick-slider
-{
+.slick-slider{
     margin-bottom: 0px;
 }
-.slick-dots
-{
+.slick-dots{
     position: absolute;
     bottom: 0px;
     left: 75%;
@@ -1061,8 +1060,7 @@ body{
     list-style: none;
     text-align: center;
 }
-.slick-dots li
-{
+.slick-dots li{
     position: relative;
     display: inline-block;
     width: 20px;
@@ -1071,8 +1069,7 @@ body{
     padding: 0;
     cursor: pointer;
 }
-.slick-dots li button
-{
+.slick-dots li button{
     font-size: 0px;
     line-height: 0;
     display: block;
@@ -1163,19 +1160,49 @@ body{
   margin: 0;
 }
 
-
-
 /*Responsive*/
-
-@media(max-width: 767px){
-  .gallery img{
-    width: 100%;
-  }
-}
 @media(max-width: 1000px){
   .team__person{
      max-width: 270px;
      text-align: center;
      margin: 0 auto 50px;
   }
+  .slider{
+    padding-bottom: 35px;
+  }
+  .slider__item{
+    text-align: center;
+  }
+  .slider img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+  .slider__item-text{
+    width: 80%;
+    margin: 0;
+  }
+  .slick-dots{
+    width: 60px;
+    left: calc(50% - 30px);
+  }
 }
+@media(max-width: 768px){
+  .page-header__title{
+    font-size: 40px;
+  }
+  .page-header__text{
+    font-size: 18px;
+  }
+  .gallery img{
+    width: 100%;
+  }
+}
+@media(max-width: 480px){
+  .page-header__title{
+    font-size: 30px;
+  }
+  .slider__item-text{
+    width: 90%;
+}
+
