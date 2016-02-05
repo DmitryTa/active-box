@@ -749,25 +749,45 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 .page-header{
-	padding-top: 20px;
-	padding-bottom: 140px;
-	background: url(../img/header-bg.jpg) left top;
-	background-size: cover;
+	padding-top: 25px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in;
 }
 .page-header__navigation{
 	padding-bottom: 30px;
 	border-bottom: 1px solid #4f5268;
+  max-width: 1120px;
+  margin: auto;
+  transition: padding 0.3s ease-in;
+}
+.fixed{
+  background-color: #292c47;
+  z-index: 100;
+  padding-top: 5px;
+}
+.fixed .page-header__navigation{
+  padding-bottom: 10px;
+  border: 0;
 }
 .main-nav ul li{
 	display: inline-block;
 }
-.main-nav ul li a{
+.main-nav a{
 	font-size: 13px;
 	font-weight: 700;
 	color: #cbccd3;
+  opacity: 0.9;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: color .3s ease-in;
+}
+.main-nav ul li .active{
+  color: #fff;
+  opacity: 1;
 }
 .main-nav ul li a:hover{ color: #ffffff;}
 .main-nav ul li:not(:last-child) a{
@@ -777,7 +797,9 @@ body{
 	margin-top: 15px;
 }
 .page-header__promo-block{
-	padding-top: 140px;
+	padding-top: 240px;
+  padding-bottom: 140px;
+  background: url(../img/header-bg.jpg) left top;
 }
 .page-header__title{
 	font-family: 'Open Sans', sans-serif;
@@ -1016,6 +1038,8 @@ body{
 }
 .slider{
   background-color: #53354a;
+  min-height: 335px;
+
 }
 .slick-active,
 .slick-slide{outline: 0;}
@@ -1023,6 +1047,7 @@ body{
   min-height: 325px;
   width: 50%;
   display: inline-block;
+  height: 100%;
 }
 .slider__item-text{
   display: inline-block;
@@ -1122,12 +1147,12 @@ body{
 }
 .contacts{
     padding-top: 60px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     background-color: #3a3e64;
     color: #fff;
 }
 .contact__item{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .contacts__item-title{
     font-size: 14px;
@@ -1159,8 +1184,12 @@ body{
   color: #808080;
   margin: 0;
 }
+.copyright__text span{
+  color: #afb0bc;
+}
 
 /*Responsive*/
+
 @media(max-width: 1000px){
   .team__person{
      max-width: 270px;
@@ -1183,8 +1212,9 @@ body{
     margin: 0;
   }
   .slick-dots{
-    width: 60px;
-    left: calc(50% - 30px);
+    left: 0;
+    right: 0;
+    margin: 10px auto;
   }
 }
 @media(max-width: 768px){
