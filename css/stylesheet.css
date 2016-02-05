@@ -1020,7 +1020,7 @@ body{
 .slick-active,
 .slick-slide{outline: 0;}
 .slider img{
-  height: 325px;
+  min-height: 325px;
   width: 50%;
   display: inline-block;
 }
