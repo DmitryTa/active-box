@@ -36,9 +36,6 @@ $(document).ready(function(){
     });
 });
    
-   $('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
 
    var sections = $('section')
         nav = $('nav[class="main-nav"]');
@@ -62,3 +59,16 @@ $(document).ready(function(){
         }, 500);
       return false;
     });
+
+$(document).ready(function(){
+    $('.gallery__item').waypoint(function() {
+        $('.gallery__item').addClass('gallery__item-animation');
+    }, {
+        offset: '70%'
+    });
+    $('.call-to-action').waypoint(function() {
+        $('.call-to-action .btn').addClass('btn-animation');
+    }, {
+        offset: '75%'
+    });
+ });

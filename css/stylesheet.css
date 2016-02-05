@@ -901,6 +901,34 @@ body{
 	position: relative;
 	height: 340px;
 	box-shadow: 0 0 0 1px #ffffff;
+  opacity: 0;
+}
+.gallery__item:nth-child(1){
+  transition: opacity .5s ease-in; 
+}
+.gallery__item:nth-child(2){
+  transition: opacity .5s ease-in .1s; 
+}
+.gallery__item:nth-child(3){
+  transition: opacity .5s ease-in .2s; 
+}
+.gallery__item:nth-child(4){
+  transition: opacity .5s ease-in .3s; 
+}
+.gallery__item:nth-child(5){
+  transition: opacity .5s ease-in .7s; 
+}
+.gallery__item:nth-child(6){
+  transition: opacity .5s ease-in .6s; 
+}
+.gallery__item:nth-child(7){
+  transition: opacity .5s ease-in .5s; 
+}
+.gallery__item:nth-child(8){
+  transition: opacity .5s ease-in .5s; 
+}
+.gallery__item-animation{
+   opacity: 1;
 }
 .hover-block{
  	position: absolute;
@@ -1145,6 +1173,24 @@ body{
     margin-top: 0;
     margin-bottom: 35px;
 }
+.btn-animation{
+  animation: tada 1.5s ease-in-out;
+}
+@keyframes tada{
+  20%{
+    transform: rotate(-10deg);
+  }
+  40%{
+    transform: rotate(10deg);
+  }
+  60%{
+    transform: rotate(-10deg);
+  }
+  80%{
+    transform: rotate(10deg);
+  }
+}
+
 .contacts{
     padding-top: 60px;
     padding-bottom: 20px;
@@ -1231,6 +1277,7 @@ body{
 @media(max-width: 480px){
   .page-header__title{
     font-size: 30px;
+    line-height: 35px;
   }
   .slider__item-text{
     width: 90%;
