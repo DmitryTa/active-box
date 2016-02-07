@@ -951,7 +951,7 @@ body{
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .1em;
+  margin-left: .2em;
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -1360,10 +1360,10 @@ body{
 @media(max-width: 480px){
   .promo-block__title{
     font-size: 30px;
-    line-height: 40px;
+    line-height: 42px;
   }
   .promo-block__text{
-    line-height: 25px;
+    line-height: 27px;
   }
   .promo-block{
     padding-top: 160px;
