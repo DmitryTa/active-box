@@ -1,5 +1,6 @@
 
 /*Bootstrap grid */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -783,7 +784,7 @@ body{
   opacity: 0.9;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: color .3s ease-in;
+	transition: all .3s ease-in;
 }
 .main-nav ul li .active{
   color: #fff;
@@ -951,7 +952,7 @@ body{
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+ 
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -975,6 +976,11 @@ body{
 .icon-genius:before { content: '\e807'; } /* '' */
 .icon-briefcase:before { content: '\e808'; } /* '' */
 .icon-download:before { content: '\e809'; } /* '' */
+.icon-genius:before,
+.icon-lightbulb:before,
+.icon-tools:before{
+  margin-right: 0;
+}
 .feature-item__title{
 	font-size: 14px;
 	font-weight: 700;
@@ -1358,6 +1364,9 @@ body{
     min-height: 120px;
 }
 @media(max-width: 480px){
+  .main-nav.mobile-nav ul{
+    margin-top: 30%;
+  }
   .promo-block__title{
     font-size: 30px;
     line-height: 42px;
@@ -1373,5 +1382,11 @@ body{
   }
   .slider__item-text{
     width: 90%;
-}
+  }
+  .gallery__item{
+    height: 280px;
+  }
+  .gallery__item img{
+  height: 280px;
+  }
 }
