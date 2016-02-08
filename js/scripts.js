@@ -31,7 +31,7 @@ $(document).ready(function(){
     var top=target.offset().top;
     $('html,body').animate({
       scrollTop: top
-    }, 2000);
+    }, 1200);
 
     });
 
@@ -81,7 +81,7 @@ mobileButton.onclick = function(e) {
   mobileNav.classList.toggle('mobile-nav');
 }
 nav.find('a').on('click', function() {
-        $('#mobile-menu').toggleClass('mobile-nav');
+        $('#mobile-menu').removeClass('mobile-nav');
         mobileButton.classList.toggle('active-icon');
     });
 });
