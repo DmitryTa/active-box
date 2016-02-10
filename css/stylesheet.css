@@ -884,7 +884,7 @@ body{
 	padding-top: 240px;
   padding-bottom: 140px;
   background: url(../img/header-bg.jpg) no-repeat left top;
-  
+  background-attachment: fixed;
 }
 .promo-block__title{
 	font-family: 'Open Sans', sans-serif;
